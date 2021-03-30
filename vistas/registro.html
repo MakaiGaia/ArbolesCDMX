@@ -8,7 +8,7 @@
     <body>
         <h2 align="center">Ingrese los datos solicitados a continuaci&oacute;n</h2>
         <div id="formularios">
-                <!--<form id="filesup" action="" method="POST"></form>-->
+               <!-- <form id="filesup" action="" method="POST"></form>-->
                 <form action="" method="POST" enctype="multipart/form-data">
                     <div id="names">
                         <label for="name">Nombre</label>
@@ -19,7 +19,7 @@
                         <input type="text" id="ap_mat" name="apellido_pat" maxlength="30" required>
                     </div>
                     <div id="genero">
-                        <p>Seleccione su genero:</p>
+                        <h2>Seleccione su genero:</h2>
                             <input type="radio" id="male" name="gender" value="male">
                             <label for="male">Hombre</label><br>
                             <input type="radio" id="female" name="gender" value="female">
@@ -34,6 +34,7 @@
                         <input type="number" id="age" name="age_edad" maxlength="3" required>
                         <label for="cel">Celular</label> 
                         <input type="tel" id="cel" name="celular" maxlength="10" required>
+                        <br>
                         <label for="rfc">RFC</label>
                         <input type="text" id="rfc" name="rfc" maxlength="13" required>
                         <label for="curp">CURP</label>
@@ -44,6 +45,7 @@
                         <input type="file" name="ifeine" form="filesup">
                         <input type="submit" value="Subir archivo" form="filesup">
                     </div>
+                    <br>
                     <label for="correo">Correo</label>
                     <input type="email" id="Correo" name="correo_elec" maxlength="60" required>
                     <label for="pass">Ingrese una contraseña</label>
