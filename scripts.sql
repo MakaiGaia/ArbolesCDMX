@@ -128,4 +128,44 @@ ALTER TABLE `ARCHPRIVADOS` ADD PRIMARY KEY (`idArchivo`);
 
 ALTER TABLE `ARCHPRIVADOS` MODIFY `idArchivo` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 
-ALTER TABLE nombre_tabla MODIFY nombre_columna DATE NOT NULL;
+alter table archivos
+ADD foreign key(idCliente) references cliente(id);
+
+alter table archpublicos
+ADD foreign key(id_folioPub) references solpublica(id_foliPub);
+
+alter table archpublicos
+ADD foreign key(idCliente) references cliente(id);
+
+alter table solpublica
+ADD foreign key(foto) references archpublicos(idArchivo);
+
+alter table tramitepublico
+ADD foreign key(id_folioPu) references solpublica(id_foliPub);
+
+alter table tramitepublico
+ADD foreign key(id_serviP) references empleado(id_servPu);
+
+alter table tramitepublico
+ADD foreign key(idCliente) references cliente(id);
+
+alter table tramiteprivado
+ADD foreign key(id_folioPr) references solprivada(id_folioPriv);
+
+alter table tramiteprivado
+ADD foreign key(id_serviP) references empleado(id_servPu);
+
+alter table tramiteprivado
+ADD foreign key(idCliente) references cliente(id);
+
+alter table permisos
+ADD foreign key(id_folioPrivado) references solprivada(id_folioPriv);
+
+alter table permisos
+ADD foreign key(idCliente) references cliente(id);
+
+alter table solprivada
+ADD foreign key(foto) references archprivados(idArchivo);
+
+alter table archprivados
+ADD foreign key(id_folioPrivado) references solprivada(id_folioPriv);

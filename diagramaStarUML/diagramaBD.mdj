@@ -3800,7 +3800,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF4gj28bDcZGSQ="
 							},
-							"name": "idIdentificacion",
+							"name": "idCliente",
 							"type": "INTEGER",
 							"length": 0,
 							"foreignKey": true
