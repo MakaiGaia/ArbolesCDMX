@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>
+            Ingrese sus datos
+        </title>
+    </head>
+    <body>
+        <div id="Contenido">
+            <h2>Ingrese los datos solicitados a continuaci&oacute;n</h2>
+            <div id="formulario">
+                <form action="" method="POST">
+                    <div id="names">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="client_name" maxlength="60" required>                    
+                    <label for="ap_pat">Apellido paterno</label>
+                    <input type="text" id="ap_pat" name="apellido_pat" maxlength="30" required>
+                    <label for="ap_mat">Apellido materno</label>
+                    <input type="text" id="ap_mat" name="apellido_pat" maxlength="30" required>
+                    </div>
+                    <div id="genero">
+                    <p>Seleccione su genero:</p>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Hombre</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Mujer</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Otro</label>
+                    </div>
+                    <label for="dir">Direcci&oacute;n</label>
+                    <input type="text" id="dir" name="direction" maxlength="260" required>
+                    <div id="numbers">
+                    <label for="age">Edad</label>
+                    <input type="number" id="age" name="age_edad" maxlength="3" required>
+                    <label for="cel">Celular</label> 
+                    <input type="tel" id="cel" name="celular" maxlength="10" required>
+                    <label for="rfc">RFC</label>
+                    <input type="text" id="rfc" name="rfc" maxlength="13" required>
+                    <label for="curp">CURP</label>
+                    <input type="text" id="curp" name="curp" maxlength="18" required>
+                    </div>
+
+                    <label for="correo">Correo</label>
+                    <input type="email" id="Correo" name="correo_elec" maxlength="60" required>
+                    <label for="pass">Ingrese una contraseña</label>
+                    <input type="password" id="pass" name="pass" maxlength="20" required>
+                    <button type="submit">Continuar</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
