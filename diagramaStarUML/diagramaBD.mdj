@@ -737,7 +737,7 @@
 									"font": "Arial;13;1",
 									"left": 1248,
 									"top": 509,
-									"width": 197.35595703125,
+									"width": 200.9677734375,
 									"height": 13,
 									"text": "EMPLEADO"
 								},
@@ -763,7 +763,7 @@
 											"font": "Arial;13;0",
 											"left": 1253,
 											"top": 532,
-											"width": 187.35595703125,
+											"width": 190.9677734375,
 											"height": 13
 										},
 										{
@@ -778,7 +778,7 @@
 											"font": "Arial;13;0",
 											"left": 1253,
 											"top": 547,
-											"width": 187.35595703125,
+											"width": 190.9677734375,
 											"height": 13
 										},
 										{
@@ -793,7 +793,7 @@
 											"font": "Arial;13;0",
 											"left": 1253,
 											"top": 562,
-											"width": 187.35595703125,
+											"width": 190.9677734375,
 											"height": 13
 										},
 										{
@@ -808,7 +808,7 @@
 											"font": "Arial;13;0",
 											"left": 1253,
 											"top": 577,
-											"width": 187.35595703125,
+											"width": 190.9677734375,
 											"height": 13
 										},
 										{
@@ -823,7 +823,7 @@
 											"font": "Arial;13;0",
 											"left": 1253,
 											"top": 592,
-											"width": 187.35595703125,
+											"width": 190.9677734375,
 											"height": 13
 										},
 										{
@@ -838,7 +838,7 @@
 											"font": "Arial;13;0",
 											"left": 1253,
 											"top": 607,
-											"width": 187.35595703125,
+											"width": 190.9677734375,
 											"height": 13
 										},
 										{
@@ -853,21 +853,21 @@
 											"font": "Arial;13;0",
 											"left": 1253,
 											"top": 622,
-											"width": 187.35595703125,
+											"width": 190.9677734375,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 1248,
 									"top": 527,
-									"width": 197.35595703125,
+									"width": 200.9677734375,
 									"height": 113
 								}
 							],
 							"font": "Arial;13;0",
 							"left": 1248,
 							"top": 504,
-							"width": 197.35595703125,
+							"width": 200.9677734375,
 							"height": 136,
 							"nameLabel": {
 								"$ref": "AAAAAAF4gg+6qzRT4hI="
@@ -2863,8 +2863,9 @@
 							"_parent": {
 								"$ref": "AAAAAAF4gfoszjKXhA8="
 							},
-							"name": "id_servP",
+							"name": "id_serviP",
 							"type": "INTEGER",
+							"length": 0,
 							"foreignKey": true
 						},
 						{
@@ -2948,7 +2949,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF4ggqx8zOqs3w="
 							},
-							"name": "id_servP",
+							"name": "id_serviP",
 							"type": "INTEGER",
 							"length": 0,
 							"foreignKey": true
