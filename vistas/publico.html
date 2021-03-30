@@ -1,0 +1,57 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="../estilo.css">
+        <title>Publico</title>
+    </head>
+    <body>
+        <h2 align="center">Tramite Publico</h2>
+        <div id="formularios">
+               <!-- <form id="filesup" action="" method="POST"></form>-->
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label for="alc">Seleccione alcaldia</label>
+                        <select name="alcaldia">
+                            <option>Seleccione una alcaldia</option>
+                            <option>ALCALDIA CUAJIMALPA DE MORELOS</option>
+                            <option>ALCALDIA IZTACALCO</option>
+                            <option>ALCALDIA COYOACÁN</option>
+                            <option>ALCALDIA VENUSTIANO CARRANZA</option>
+                            <option>ALCALDIA CUAUHTÉMOC</option>
+                            <option>ALCALDIA GUSTAVO A MADERO</option>
+                            <option>ALCALDIA MIGUEL HIDALGO</option>
+                            <option>ALCALDIA IZTAPALAPA</option>
+                            <option>ALCALDIA AZCAPOTZALCO</option>
+                            <option>ALCALDIA TLALPAN</option>
+                            <option>ALCALDIA LA MAGDALENA CONTRERAS</option>
+                            <option>ALCALDIA TLAHUAC</option>
+                            <option>ALCALDIA ÁLVARO OBREGÓN</option>
+                            <option>ALCALDIA MILPA ALTA</option>
+                        </select>
+                    <div id="direcion">
+                        <label for="dir">Direcci&oacute;n</label>
+                        <input type="text" id="dir" name="direction" maxlength="260" required>
+                        <br>
+                        <label for="dir">Descripci&oacute;n</label>
+                        <input type="text" id="des" name="description" maxlength="260" required>
+                         <div id=filesup>
+                            <label for="ifeine">Registro Fotografico</label>
+                            <input type="file" name="ifeine" form="filesup">
+                            <input type="submit" value="Subir archivo" form="filesup">
+                        </div>
+                        
+                        <label for="fau">¿Hay fauna?</label>
+                        <select name="fauna">
+                            <option>si</option>
+                            <option>no</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="Enviar">
+                </form>
+            </div>
+    </body>
+</html>
+
+
+
+
