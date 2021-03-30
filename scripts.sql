@@ -79,5 +79,53 @@ ALTER TABLE `PERMISOS` ADD PRIMARY KEY (`idPermiso`);
 
 ALTER TABLE `PERMISOS` MODIFY `idPermiso` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 
-	
+
+
+create table if not exists `ARCHPUBLICOS` (`idArchivo` int not null,
+										`id_folioPub` int not null,
+                                        `idIdentificacion` int not null,
+										`foto` binary not null)ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+ALTER TABLE `ARCHPUBLICOS` ADD PRIMARY KEY (`idArchivo`);
+
+ALTER TABLE `ARCHPUBLICOS` MODIFY `idArchivo` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+
+
+
+
+create table if not exists `SOLPUBLICA` (`id_foliPub` int not null,
+										`direccion` varchar(50) not null,
+                                        `descripcion` varchar(100) not null,
+                                        `dimensiones` varchar(20) not null,
+                                        `fauna` varchar(50) not null,
+										`foto` binary not null)ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+ALTER TABLE `SOLPUBLICA` ADD PRIMARY KEY (`id_foliPub`);
+
+ALTER TABLE `SOLPUBLICA` MODIFY `id_foliPub` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+
+
+
+
+create table if not exists `SOLPRIVADA` (`id_folioPriv` int not null,
+										`direccion` varchar(50) not null,
+                                        `tipo` varchar(50) not null,
+                                        `motivo` varchar(100) not null,
+                                        `dimensiones` varchar(20) not null,
+                                        `fauna` varchar(50) not null,
+                                        `referenciaPago` int not null,
+										`foto` binary not null)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `SOLPRIVADA` ADD PRIMARY KEY (`id_folioPriv`);
+
+ALTER TABLE `SOLPRIVADA` MODIFY `id_folioPriv` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+
+create table if not exists `ARCHPRIVADOS` (`idArchivo` int not null,
+										`id_folioPrivado` int not null,
+										`archivo` binary not null)ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+ALTER TABLE `ARCHPRIVADOS` ADD PRIMARY KEY (`idArchivo`);
+
+ALTER TABLE `ARCHPRIVADOS` MODIFY `idArchivo` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
+
 ALTER TABLE nombre_tabla MODIFY nombre_columna DATE NOT NULL;

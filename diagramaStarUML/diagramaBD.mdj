@@ -3245,7 +3245,7 @@
 							},
 							"name": "dimensiones",
 							"type": "VARCHAR",
-							"length": "10"
+							"length": "20"
 						},
 						{
 							"_type": "ERDColumn",
@@ -3254,7 +3254,7 @@
 								"$ref": "AAAAAAF4ghVh/DTVjzg="
 							},
 							"name": "fotos",
-							"type": "INTEGER",
+							"type": "BINARY",
 							"length": 0,
 							"foreignKey": true
 						},
