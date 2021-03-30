@@ -23,6 +23,7 @@
                         <input type="text" id="cp" name="cp" maxlength="6" required>                        
                     </div>
                     <div id="listalcadia">
+                        <label for="alcadia">Alcald&iacute;a</label>
                         <select name="alcadia" required>
                             <option value="" selected disabled hidden>Elija su alcad&iacute;a</option>
                             <option value="alvaroobregon">&Aacute;lvaro Obreg&oacute;n</option>
@@ -44,29 +45,46 @@
                         </select>
                     </div>
                     <div id="direction">
-                        <label for="dir">Direcci&oacute;n</label>
-                        <input type="text" id="dir" name="direction" maxlength="260" required>
+                        <label for="colonia">Colonia</label>
+                        <input type="text" id="colonia" name="colonia" maxlength="60" required>
+                        <label for="rf">Referencias visuales</label>
+                        <input type="text" id="rf" name="rf" maxlength="100" required>
                     </div>
-                    <div id="numbers">
-                        <label for="age">Edad</label>
-                        <input type="number" id="age" name="age_edad" maxlength="3" required>
-                        <label for="cel">Celular</label> 
-                        <input type="tel" id="cel" name="celular" maxlength="10" required>
-                        <label for="rfc">RFC</label>
-                        <input type="text" id="rfc" name="rfc" maxlength="13" required>
-                        <label for="curp">CURP</label>
-                        <input type="text" id="curp" name="curp" maxlength="18" required>
+                    <div id="listaopt">
+                        <label for="motivo">Motivo</label>
+                        <select name="motivo">
+                            <option value="" selected disabled hidden>Seleccione...</option>
+                            <option value="riesgo">Poda o derribo por riesgo</option>
+                            <option value="modification">Poda o derribo por construcci&oacute;n, remodelaci&oacute;n, ampliaci&oacute;n o modificaci&oacute;n.</option>
+                            <option value="ornamento">Poda ornamental o topiaria.</option>
+                        </select>
                     </div>
                     <div id=filesup>
-                        <label for="ifeine">Suba foto de su INE o IFE</label>
-                        <input type="file" name="ifeine" form="filesup">
+                        <label for="arbol">Evidencia fotogr&aacute;fica del &aacute;rbol</label>
+                        <input type="file" name="arbol" form="filesup">
                         <input type="submit" value="Subir archivo" form="filesup">
-                    </div>
-                    <label for="correo">Correo</label>
-                    <input type="email" id="Correo" name="correo_elec" maxlength="60" required>
-                    <label for="pass">Ingrese una contraseña</label>
-                    <input type="password" id="pass" name="pass" maxlength="20" required>
-                    <button type="submit">Continuar</button>
+                    </div>  
+                </form>
+            </div>
+            <div id="permiso1">
+                <form id="construccion" action=" " method="POST" enctype="multipart/form-data">
+                    <label for="pconst">Licencia de construcci&oacute;n A, B o C o equivalente vigente</label>
+                    <input type="file" name="pconst" form="filesup">
+                    <input type="submit" value="Subir archivo" form="construccion">
+                </form>
+            </div>
+            <div id="permiso2">
+                <form id="declara" action=" " method="POST" enctype="multipart/form-data">
+                    <label for="da">Declaratoria Ambiental</label>
+                    <input type="file" name="da" form="filesup">
+                    <input type="submit" value="Subir archivo" form="declara">
+                </form>
+            </div>
+            <div id="permiso3">
+                <form id="plano" action=" " method="POST" enctype="multipart/form-data">
+                    <label for="planocroq">Plano o croquis</label>
+                    <input type="file" name="planocroq" form="filesup">
+                    <input type="submit" value="Subir archivo" form="plano">
                 </form>
             </div>
         </div>
