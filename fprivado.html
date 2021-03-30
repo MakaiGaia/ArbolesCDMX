@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>
+            Formato: atenci&oacute;n de &aacute;rbol en propiedad privada
+        </title>
+    </head>
+    <body>
+        <div id="Contenido">
+            <h2>Ingrese los datos solicitados a continuaci&oacute;n</h2>
+            <div id="formulario">
+                <form id="filesup" action="" method="POST" enctype="multipart/form-data"></form>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <div id="ubication">
+                        <label for="calle">Calle</label>
+                        <input type="text" id="calle" name="calle" maxlength="60" required>                    
+                        <label for="entre">Ubicado entre</label>
+                        <input type="text" id="entre" name="entre" maxlength="30" required>
+                        <label for="yentre">y entre</label>
+                        <input type="text" id="yentre" name="yentre" maxlength="30" required>
+                        <label for="cp">C.P.</label>
+                        <input type="text" id="cp" name="cp" maxlength="6" required>                        
+                    </div>
+                    <div id="listalcadia">
+                        <select name="alcadia" required>
+                            <option value="" selected disabled hidden>Elija su alcad&iacute;a</option>
+                            <option value="alvaroobregon">&Aacute;lvaro Obreg&oacute;n</option>
+                            <option value="Azcapotzalco">Azcapotzalco</option>
+                            <option value="BenitoJuarez">Benito Ju&aacute;rez</option>
+                            <option value="Coyoacan">Coyoac&aacute;n</option>
+                            <option value="Cuajimalpa">Cuajimalpa de Morelos</option>
+                            <option value="Cuauhtemoc">Cuauht&eacute;moc</option>
+                            <option value="GustavoAMadero">Gustavo A. Madero</option>
+                            <option value="Iztacalco">Iztacalco</option>
+                            <option value="Iztapalapa">Iztapalapa</option>
+                            <option value="Magdalena">Magdalena Contreras</option>
+                            <option value="MiguelH">Miguel Hidalgo</option>
+                            <option value="MilpaAlta">Milpa Alta</option>
+                            <option value="Tlahuac">Tl&aacute;huac</option>
+                            <option value="Tlalpan">Tlalpan</option>
+                            <option value="VenustianoC">Venustiano Carranza</option>
+                            <option value="Xochimilco">Xochimilco</option>
+                        </select>
+                    </div>
+                    <div id="direction">
+                        <label for="dir">Direcci&oacute;n</label>
+                        <input type="text" id="dir" name="direction" maxlength="260" required>
+                    </div>
+                    <div id="numbers">
+                        <label for="age">Edad</label>
+                        <input type="number" id="age" name="age_edad" maxlength="3" required>
+                        <label for="cel">Celular</label> 
+                        <input type="tel" id="cel" name="celular" maxlength="10" required>
+                        <label for="rfc">RFC</label>
+                        <input type="text" id="rfc" name="rfc" maxlength="13" required>
+                        <label for="curp">CURP</label>
+                        <input type="text" id="curp" name="curp" maxlength="18" required>
+                    </div>
+                    <div id=filesup>
+                        <label for="ifeine">Suba foto de su INE o IFE</label>
+                        <input type="file" name="ifeine" form="filesup">
+                        <input type="submit" value="Subir archivo" form="filesup">
+                    </div>
+                    <label for="correo">Correo</label>
+                    <input type="email" id="Correo" name="correo_elec" maxlength="60" required>
+                    <label for="pass">Ingrese una contraseña</label>
+                    <input type="password" id="pass" name="pass" maxlength="20" required>
+                    <button type="submit">Continuar</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
