@@ -1,0 +1,252 @@
+/*Estilo del cuerpo en general*/
+body {
+    margin:0;
+    padding:0;
+    border:0;           
+    width:100%;
+    font-size:90%;
+    background-image: url(../img/img11.jpg);
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background: black;
+}
+
+/*Estilo Encabezado*/
+.encabezado {
+    clear:both;
+    float:left;
+    width:100%;  
+    padding: 5px;
+}
+
+.encabezado h1{
+    text-align: center;
+}
+
+/*Estilo menu*/
+.menu{
+    position:relative; 
+    clear:both;
+    float:left;
+    width:100%;         
+    background-color: #00AFEF; 
+    border-radius: 40px;
+}
+
+.menu a{
+    color:black;
+    text-decoration:none;
+    font-size:25px;
+}
+
+.menu li{
+    display:inline-block;
+    width:19%;
+    background-color:#EEF8FD;
+    text-align:center;
+    border-radius: 40px;
+}
+
+.menu li:hover{
+    background-color:#24677B;
+    color:#000;
+}
+
+/*Estilo de cuerpos*/
+.cuerpo{
+    padding:10px;    
+}
+
+.cuerpo h2{
+    text-align: center;
+}
+
+.formulario{
+    text-align: center;
+    padding:10px;
+    margin-top: 10px;
+    background-color: #00AFEF;
+    width: 50%;
+    border-radius: 40px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.envoltura {
+    margin-top: 10px;
+    position:relative;  /* Esto arregla un bug en IE7 */
+    clear:both;
+    float:left;
+    width:100%;  
+    background-image: url(../img/img11.jpg);               
+}
+
+.elementos {
+    margin-top: 10px;
+    position:relative;  /* Esto arregla un bug en IE7 */
+    clear:both;
+    float:left;
+    width:100%; 
+    background-image: url(../img/img11.jpg);                
+}
+
+.interna li{
+    padding: 0;
+    margin-bottom: 5px;
+    width:95%;
+    background-color:#EEF8FD;
+    border-radius: 40px;
+}
+
+/* configuración en común de las columnas T1 */
+.principal, .columna {
+    min-height: 600px;
+    position: relative;
+    border-radius: 40px;
+}
+
+.principal{
+    background-color: #24677B;
+    width: 69%;
+    float:left;
+}
+
+.principal2{
+    background-color: #24677B;
+    width: 100%;
+    float:center;
+}
+
+.columna{
+    background-color:#00AFEF;
+    width: 30%;
+    float: right;
+    text-align:center;
+}
+
+.columna a{
+    color:black;
+    text-decoration:none;
+    font-size:25px;
+}
+
+.columna li{
+    padding: 0;
+    margin-bottom: 5px;
+    width:95%;
+    background-color:#EEF8FD;
+    border-radius: 40px;
+}
+
+.columna p{
+    color:white;
+    font-size:30px;
+}
+
+.columna li:hover{
+    background-color:#24677B;
+    color:#000;
+    }
+
+/* configuración en común de las columnas T2 Y T3 */
+.c1, .c2, .c3 {
+    text-align: center;
+    position: relative;
+    border-radius: 40px;
+    float:left;
+    width: 30%;
+}
+
+.v1, .v2, .v3, .v4{
+    text-align: center;
+    position: relative;
+    border-radius: 40px;
+    float:left;
+    width: 25%;
+}
+
+/* Video*/
+.video{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto; 
+}
+
+/*formulario*/
+*{box-sizing:border-box;}
+
+form{
+    width:300px;
+    padding:16px;
+    border-radius:10px;
+    margin:auto;
+    background-color:#ccc;
+}
+
+form label{
+    width:72px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"],
+form input[type="file"]{
+    width:180px;
+    padding:3px 10px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;
+    margin:8px 0;
+    display:inline-block;
+}
+
+form input[type="submit"]{
+    width:100%;
+    padding:8px 16px;
+    margin-top:32px;
+    border:1px solid #000;
+    border-radius:5px;
+    display:block;
+    color:#fff;
+    background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+    cursor:pointer;
+}
+
+textarea{
+    width:100%;
+    height:100px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;           
+    margin:8px 0;
+    /*resize: vertical | horizontal | none | both*/
+    resize:none;
+    display:block;
+}
+/* estilo del pie de la página */
+.pie {
+    margin-top: 10px;
+    background-color:#08AD45;
+    clear:both;
+    float:left;
+    width:99%;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.pie p{
+    background-color:#08AD45;
+    color:white;
+    font-size:15px;
+    text-align: center;
+}
